@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Self-Healing OS Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>💻 Self-Healing OS Simulator</h1>
+
+  <button class="add-btn" onclick="addProcess()">➕ Add Process</button>
+
+  <div class="cards">
+    <div class="card">
+      <h2 id="total">0</h2>
+      <p>Total Processes</p>
+    </div>
+    <div class="card">
+      <h2 id="issues">0</h2>
+      <p>Issues Detected</p>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Process</th>
+        <th>Status</th>
+        <th>CPU (%)</th>
+        <th>Memory (%)</th>
+        <th>Action</th>
+        <th>Controls</th>
+      </tr>
+    </thead>
+    <tbody id="processTable"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
